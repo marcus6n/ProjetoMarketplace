@@ -1,48 +1,52 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
-    overflow: hidden;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  overflow: hidden;
 }
 
+/* Estilos CSS para o painel de controle */
+
+/* Estilos gerais */
 body {
-    background-color: #101728;
-    color: white;
+  font-family: Arial, sans-serif;
+  margin: 50px;
+  padding: 0;
+  background-color: #101728;
+  color: rgb(0, 0, 0);
+  overflow: auto;
 }
 
-section {
-    margin: 0px 20px 0px 20px;
+h1,
+h2 {
+  color: #ffffff;
 }
 
-h1, h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    margin-top: 20px;
-  }
-  
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    border-radius: 20px;
-  }
-  
-  th, td {
-    padding: 10px;
-    text-align: left;
-  }
-  
-  th {
-    background-color: #63249a;
-    color: white;
-  }
-  
-  tr:nth-child(even) {
-    background-color: #f2f2f26f;
-  }
-  
-  tr:hover {
-    background-color: #ddddddc5;
-  }
+/* Estilos para as tabelas */
+table {
+  border-radius: 20px;
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #9c9c9c;
+  font-weight: bold;
+}
+
+/* Estilos para os gráficos */
+.chart-container {
+  /* Adicione estilos para o contêiner do gráfico */
+  margin-bottom: 20px;
+}

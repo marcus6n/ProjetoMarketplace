@@ -265,6 +265,81 @@ footer {
     margin-top: 5px;
 }
 
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.cart {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.cart h1 {
+    margin-top: 0;
+}
+
+.cart-items {
+    list-style-type: none;
+    padding: 0;
+}
+
+.cart-summary {
+    margin-top: 20px;
+    text-align: right;
+}
+
+.total-label {
+    font-weight: bold;
+}
+
+.total-price {
+    font-weight: bold;
+    color: #009900;
+}
+
+.btn-back {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #5422b7;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 3px;
+    transition: all 200ms ease-in-out;
+}
+
+.btn-back:hover {
+    background-color: #ffffff;
+    color: #5422b7;
+}
+
+.carrinho img {
+    width: 50px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input[type="text"] {
+    width: 200px;
+    padding: 5px;
+}
+
+.search-bar button {
+    padding: 7px 10px;
+    border-radius: 2px;
+    background-color: #4907d9;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
 
 
 /* ANIMAÇÕES */

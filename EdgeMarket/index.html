@@ -14,9 +14,21 @@
         <img src="assets/img/logo.svg" alt="logo" />
         <h1>EdgeMarket</h1>
       </div>
+      <div class="search-bar">
+        <input type="text" placeholder="Pesquisar...">
+        <button type="submit">Buscar</button>
+      </div>
       <div class="links">
         <a href="admin/user/login.html">Login</a>
         <a href="admin/user/registro.html">Registrar</a>
+      </div>
+      <div class="carrinho">
+        <a href="carrinho.html">
+          <img
+            src="assets/img/carrinhodecompra.png"
+            alt="carrinho-de-compras"
+          />
+        </a>
       </div>
     </nav>
 
@@ -60,8 +72,8 @@
         <h1>PUBLIQUE SUA NFT</h1>
         <br />
         <p>
-          Crie uma carteira de criptomoedas, escolha uma plataforma NFT,
-          carregue sua arte ou colecionável e publique-o para venda.
+          NFTs são tokens digitais únicos usados para representar obras de arte,
+          colecionáveis e outros ativos exclusivos na blockchain.
         </p>
         <br />
         <a href="admin/seller/formsell.html">PUBLICAR</a>
@@ -89,8 +101,91 @@
         <a href="https://www.twitter.com"
           ><img src="assets/img/twitter.svg" alt="Twitter"
         /></a>
-        <a href="admin/owner/dashboard.html">DASHBOARD</a>
+        <br>
+        <a href="admin/owner/dashboard.html" style="color: #fff; padding: 20px; background-color: rgb(14, 92, 217); text-decoration: none; border-radius: 20px;">Área do Administrador</a>
       </div>
     </footer>
+
+    <a
+      href="suporte.html"
+      target="_blank"
+      style="
+        right: 25px;
+        position: fixed;
+        width: 60px;
+        height: 60px;
+        bottom: 40px;
+        z-index: 100;
+      "
+    >
+      <img
+        src="assets/img/suportefoto.png"
+        alt=""
+        width="60px"
+      />
+    </a>
+    <span
+      id="alertWapp"
+      style="
+        right: 30px;
+        visibility: hidden;
+        position: fixed;
+        width: 17px;
+        height: 17px;
+        bottom: 90px;
+        background: red;
+        z-index: 101;
+        font-size: 11px;
+        color: #fff;
+        text-align: center;
+        border-radius: 50px;
+        font-weight: bold;
+        line-height: normal;
+      "
+    >
+      1
+    </span>
+    <div
+      id="msg1"
+      style="
+        right: 90px;
+        visibility: hidden;
+        background: #fff;
+        color: #000;
+        position: fixed;
+        width: 100px;
+        bottom: 55px;
+        font-size: 12px;
+        line-height: 13px;
+        padding: 3px;
+        border-radius: 10px;
+        border: 1px solid #e2e2e2;
+        box-shadow: 2px 2px 3px #999;
+        z-index: 100;
+      "
+    >
+      Oi, como podemos te ajudar?
+    </div>
+    <script type="text/javascript">
+      function showIt2() {
+        document.getElementById("msg1").style.visibility = "visible";
+      }
+      setTimeout("showIt2()", 5000);
+      function hiddenIt() {
+        document.getElementById("msg1").style.visibility = "hidden";
+      }
+      setTimeout("hiddenIt()", 15000);
+      function showIt3() {
+        document.getElementById("msg1").style.visibility = "visible";
+      }
+      setTimeout("showIt3()", 25000);
+      msg1.onclick = function () {
+        document.getElementById("msg1").style.visibility = "hidden";
+      };
+      function alertW() {
+        document.getElementById("alertWapp").style.visibility = "visible";
+      }
+      setTimeout("alertW()", 15000);
+    </script>
   </body>
 </html>

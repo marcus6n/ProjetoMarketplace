@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #101728;
+    color: white;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+  color: #ffffff;
+}
+
+/* Estilos para a seção de informações do perfil */
+.profile-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.profile-info img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.profile-info .seller-details {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Estilos para a seção de coleções de NFTs */
+.collections {
+  margin-bottom: 20px;
+}
+
+/* Estilos para a seção de balança de vendas */
+.balance {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.balance .scale {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+/* Estilos para a seção de informações pessoais */
+.personal-info {
+  margin-bottom: 20px;
+}
+
+.personal-info p {
+  margin: 5px 0;
+}

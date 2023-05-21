@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Suporte - Chat</title>
+    <style>
+      /* Estilos CSS para a página de suporte */
+      /* Adicione seus estilos personalizados aqui */
+
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+        background-color: #101728;
+        color: rgb(0, 0, 0);
+      }
+
+      h1 {
+        color: #ffffff;
+      }
+
+      .chat-container {
+        max-width: 600px;
+        margin: 0 auto;
+        background-color: #f2f2f2;
+        padding: 20px;
+      }
+
+      .message {
+        margin-bottom: 10px;
+      }
+
+      .message .user {
+        font-weight: bold;
+      }
+
+      .message .content {
+        margin-left: 20px;
+      }
+
+      .form-group {
+        margin-top: 20px;
+      }
+
+      .form-group textarea {
+        width: 100%;
+        padding: 8px;
+      }
+
+      .form-group button {
+        padding: 8px 16px;
+        background-color: #4caf50;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <br><br>
+    <a
+      href="../../index.html"
+      style="color: #fff; padding: 10px; background-color: rgb(118, 29, 201); border-radius: 20px; text-decoration: none;">VOLTAR</a>
+    <h1>Suporte - Chat</h1>
+
+    <div class="chat-container">
+      <div class="message">
+        <span class="user">Usuário:</span>
+        <span class="content"
+          >Olá, tenho uma dúvida sobre um NFT que comprei.</span
+        >
+      </div>
+
+      <div class="message">
+        <span class="user">Suporte:</span>
+        <span class="content">Olá, como posso ajudar?</span>
+      </div>
+
+      <!-- Adicione outras mensagens de chat aqui -->
+
+      <form action="#" method="post">
+        <div class="form-group">
+          <textarea
+            name="message"
+            rows="3"
+            placeholder="Digite sua mensagem"
+            required
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <button type="submit">Enviar</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

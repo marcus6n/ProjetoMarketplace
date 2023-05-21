@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Purchase</title>
+    <style>
+      /* Estilos CSS para o formulário de compra */
+      /* Adicione seus estilos personalizados aqui */
+
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+        background-color: #101728;
+        color: white;
+      }
+
+      h1 {
+        color: #ffffff;
+      }
+
+      form {
+        max-width: 400px;
+      }
+
+      .form-group {
+        margin-bottom: 20px;
+      }
+
+      .form-group label {
+        display: block;
+        margin-bottom: 5px;
+      }
+
+      .form-group input {
+        width: 100%;
+        padding: 8px;
+      }
+
+      .form-group button {
+        padding: 8px 16px;
+        background-color: #4caf50;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <br><br>
+    <a
+      href="../../index.html"
+      style="
+        color: #fff;
+        padding: 10px;
+        background-color: rgb(118, 29, 201);
+        border-radius: 20px;
+        text-decoration: none;
+      "
+      >VOLTAR</a
+    >
+    <br />
+    <h1>Purchase</h1>
+
+    <form action="#" method="post">
+      <div class="form-group">
+        <label for="nft-id">ID da NFT:</label>
+        <input type="text" id="nft-id" name="nft-id" required />
+      </div>
+
+      <div class="form-group">
+        <label for="price">Preço:</label>
+        <input type="text" id="price" name="price" required />
+      </div>
+
+      <div class="form-group">
+        <button type="submit">Comprar</button>
+      </div>
+    </form>
+  </body>
+</html>
