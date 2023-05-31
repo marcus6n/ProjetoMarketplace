@@ -5,7 +5,6 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
-  overflow: hidden;
 }
 
 /* Estilos CSS para o painel de controle */
@@ -16,7 +15,7 @@ body {
   margin: 50px;
   padding: 0;
   background-color: #101728;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   overflow: auto;
 }
 
@@ -41,7 +40,7 @@ td {
 }
 
 th {
-  background-color: #9c9c9c;
+  background-color: #470366;
   font-weight: bold;
 }
 

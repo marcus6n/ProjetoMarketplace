@@ -58,13 +58,36 @@
         margin: 5px 0;
       }
     </style>
+    <script>
+      // Função para deletar uma coleção de NFT
+      function deleteCollection(collection) {
+        const collectionItem = collection.parentNode;
+        collectionItem.remove();
+      }
+
+      // Função para atualizar uma coleção de NFT
+      function updateCollection(collection) {
+        const newCollectionName = prompt("Insira o novo nome da coleção:");
+        if (newCollectionName) {
+          collection.innerText = newCollectionName;
+        }
+      }
+    </script>
   </head>
   <body>
-    <br><br>
+    <br /><br />
     <a
       href="../../index.html"
-      style="color: #fff; padding: 10px; background-color: rgb(118, 29, 201); border-radius: 20px; text-decoration: none;">VOLTAR</a>
-      <br><br>
+      style="
+        color: #fff;
+        padding: 10px;
+        background-color: rgb(118, 29, 201);
+        border-radius: 20px;
+        text-decoration: none;
+      "
+      >VOLTAR</a
+    >
+    <br /><br />
 
     <h1>Perfil do Vendedor</h1>
 
@@ -72,7 +95,7 @@
       <img src="../../assets/img/icone.jpg" alt="Foto do Vendedor" />
       <div class="seller-details">
         <h2>Nome do Vendedor</h2>
-        <p>Email: exemplo@email.com</p>
+        <p>Email: nome@exemplo.com</p>
         <p>Telefone: (99) 99999-9999</p>
         <p>CPF: 999.999.999-99</p>
       </div>
@@ -82,9 +105,21 @@
       <h2>Coleções de NFTs Anunciadas</h2>
       <ul>
         <!-- Adicione itens da coleção de NFTs aqui -->
-        <li>Coleção 1</li>
-        <li>Coleção 2</li>
-        <li>Coleção 3</li>
+        <li>
+          Coleção 1
+          <button onclick="deleteCollection(this)">Deletar</button>
+          <button onclick="updateCollection(this)">Atualizar</button>
+        </li>
+        <li>
+          Coleção 2
+          <button onclick="deleteCollection(this)">Deletar</button>
+          <button onclick="updateCollection(this)">Atualizar</button>
+        </li>
+        <li>
+          Coleção 3
+          <button onclick="deleteCollection(this)">Deletar</button>
+          <button onclick="updateCollection(this)">Atualizar</button>
+        </li>
       </ul>
     </div>
 
@@ -102,7 +137,17 @@
     </div>
     <br /><br />
 
-    <a href="../../saque.html" style="padding: 20px; color: #fff; background-color: rgb(46, 43, 226); text-decoration: none; border-radius: 15px;">SACAR VALOR</a>
+    <a
+      href="../../saque.html"
+      style="
+        padding: 20px;
+        color: #fff;
+        background-color: rgb(46, 43, 226);
+        text-decoration: none;
+        border-radius: 15px;
+      "
+      >SACAR VALOR</a
+    >
 
     <a
       href="mudarsenha.html"
@@ -116,7 +161,7 @@
       "
       >Clique aqui para mudar a senha</a
     >
-    
+
     <a
       href="deletarconta.html"
       style="
@@ -129,6 +174,6 @@
       "
       >DELETAR CONTA</a
     >
-    <br><br>
+    <br /><br />
   </body>
 </html>

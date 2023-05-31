@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="../../assets/css/admin.css" />
   </head>
   <body>
-    <br>
+    <br />
     <h1>Dashboard</h1>
 
     <br />
@@ -20,7 +20,7 @@
       "
       >VOLTAR</a
     >
-    <br><br><br>
+    <br /><br /><br />
 
     <h2>Controle de Usuários que Compram NFTs</h2>
     <table>
@@ -29,9 +29,10 @@
           <th>Nome</th>
           <th>Email</th>
           <th>Data de Compra</th>
+          <th>Ações</th>
         </tr>
       </thead>
-      <tbody>
+      <tbody id="user-table-body">
         <!-- Add table rows with user data here -->
       </tbody>
     </table>
@@ -43,9 +44,10 @@
           <th>Nome</th>
           <th>Email</th>
           <th>Data de Anúncio</th>
+          <th>Ações</th>
         </tr>
       </thead>
-      <tbody>
+      <tbody id="seller-table-body">
         <!-- Add table rows with seller data here -->
       </tbody>
     </table>
@@ -57,15 +59,33 @@
           <th>Nome</th>
           <th>Descrição</th>
           <th>Vendedor</th>
+          <th>Ações</th>
         </tr>
       </thead>
-      <tbody>
+      <tbody id="nft-table-body">
         <!-- Add table rows with NFT data here -->
+      </tbody>
+    </table>
+
+    <h2>Solicitações de Saque</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Usuário</th>
+          <th>Valor</th>
+          <th>Status</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody id="withdrawal-table-body">
+        <!-- Add table rows with withdrawal data here -->
       </tbody>
     </table>
 
     <div class="chart-container">
       <!-- Add chart elements here -->
     </div>
+    
+    <script src="dashboard.js"></script>
   </body>
 </html>

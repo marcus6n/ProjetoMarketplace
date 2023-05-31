@@ -1,0 +1,50 @@
+/* Estilos CSS para a página de suporte */
+/* Adicione seus estilos personalizados aqui */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #101728;
+    color: rgb(0, 0, 0);
+}
+
+h1 {
+    color: #ffffff;
+}
+
+.chat-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.message {
+    margin-bottom: 10px;
+}
+
+.message .user {
+    font-weight: bold;
+}
+
+.message .content {
+    margin-left: 20px;
+}
+
+.form-group {
+    margin-top: 20px;
+}
+
+.form-group textarea {
+    width: 100%;
+    padding: 8px;
+}
+
+.form-group button {
+    padding: 8px 16px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
