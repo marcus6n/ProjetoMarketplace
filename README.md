@@ -6,6 +6,7 @@ Bem-vindo ao EdgeMarket, o marketplace de NFTs mais inovador do mercado! Aqui vo
 
 - HTML
 - CSS
+- JS
 - Bootstrap
 
 ## Colaboradores
