@@ -35,6 +35,21 @@
         font-weight: bold;
       }
     </style>
+    <script>
+      // Função para deletar uma coleção de NFT
+      function deleteCollection(collection) {
+        const collectionItem = collection.parentNode;
+        collectionItem.remove();
+      }
+
+      // Função para atualizar uma coleção de NFT
+      function updateCollection(collection) {
+        const newCollectionName = prompt("Insira o novo nome da coleção:");
+        if (newCollectionName) {
+          collection.innerText = newCollectionName;
+        }
+      }
+    </script>
   </head>
   <body>
     <br><br>
@@ -53,7 +68,24 @@
 
       <div class="collections">
         <h2>Coleções de NFTs Compradas</h2>
-        <!-- Adicione aqui a lista de coleções de NFTs compradas -->
+        <ul>
+          <!-- Adicione itens da coleção de NFTs aqui -->
+          <li>
+            <a href="../../catalogo.html">Coleção 1</a>
+            <button onclick="deleteCollection(this)">Deletar</button>
+            <button onclick="updateCollection(this)">Atualizar</button>
+          </li>
+          <li>
+            <a href="../../catalogo.html">Coleção 2</a>
+            <button onclick="deleteCollection(this)">Deletar</button>
+            <button onclick="updateCollection(this)">Atualizar</button>
+          </li>
+          <li>
+            <a href="../../catalogo.html">Coleção 3</a>
+            <button onclick="deleteCollection(this)">Deletar</button>
+            <button onclick="updateCollection(this)">Atualizar</button>
+          </li>
+        </ul>
       </div>
 
       <div class="personal-info">
